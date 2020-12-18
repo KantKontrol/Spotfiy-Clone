@@ -1,4 +1,13 @@
 .nav-style {
+    min-width: 300px !important;
     min-height: 90vh;
     background-color: #121212;
 }
+
+.logo-style {
+    position: relative;
+    width: 232px;
+    height: 45px;
+    margin: 10px auto;
+}
+
