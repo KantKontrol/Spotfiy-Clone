@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function LinkText(props){
 
-    const {text, url} = props;
+    const {text} = props;
 
     return(
         <button className="link-text-style" >
