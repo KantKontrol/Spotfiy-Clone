@@ -11,3 +11,8 @@
     margin: 20px auto;
 }
 
+a {
+    width: 90% !important;
+    margin-left: 5% !important;
+}
+
