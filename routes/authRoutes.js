@@ -20,6 +20,8 @@ module.exports = (server, querystring) => {
 
         server.get("/login", (req, res) => {
 
+
+            console.log("SERVER LOGGING IN")
             var state = generateRandomString(16); //get a random string to represent our current state
             res.cookie(stateKey, state); //set our cookie in the response object
 
@@ -65,12 +67,12 @@ module.exports = (server, querystring) => {
                 };
 
                 request.post(authOptions, function(error, response, body) { //makes a post request to spotify token url
-                    if (!error && response.statusCode === 200) {
+                    if (!error && response.statusCode === 200) { //if the response went well then we go ahead with grabbing our tokens
               
-                      var access_token = body.access_token,
+                      var access_token = body.access_token, //grabs our access and refresh tokens
                           refresh_token = body.refresh_token;
               
-                      var options = {
+                      var options = { //options for our next request, this request grabs user info
                         url: 'https://api.spotify.com/v1/me',
                         headers: { 'Authorization': 'Bearer ' + access_token },
                         json: true

@@ -4,6 +4,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import API from "./utils/API";
 
 import NavBar from "./components/NavBar";
 
@@ -18,12 +19,18 @@ import NoMatch from "./components/NoMatch";
 import FriendsBar from "./components/FriendsBar";
 import PlayBar from "./components/PlayBar";
 
+
+const authSpot = () => {
+  API.loginAPI();
+}
+
 function App() {
   return (
     <Router>
       <Switch>
         <Route path="/home">
           <Container fluid>
+            <button onClick={() => authSpot()}>test</button>
             <Row>
                 <NavBar />
                   <NavView>
