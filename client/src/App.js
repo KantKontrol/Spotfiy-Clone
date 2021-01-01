@@ -11,6 +11,7 @@ import NavView from "./components/NavView";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import YourLibrary from "./pages/YourLibrary";
+import NoMatch from "./components/NoMatch";
 
 
 import FriendsBar from "./components/FriendsBar";
@@ -61,6 +62,23 @@ function App() {
                 <PlayBar />
             </Row>
           </Container>
+        </Route>
+        <Route exact path="/">
+          <Container fluid>
+              <Row>
+                  <NavBar />
+                    <NavView>
+                        <Home />
+                    </NavView>
+                  <FriendsBar />
+              </Row>
+              <Row>
+                  <PlayBar />
+              </Row>
+            </Container>    
+        </Route>
+        <Route path="*">
+          <NoMatch />
         </Route>
       </Switch>
     </Router>
