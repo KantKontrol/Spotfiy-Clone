@@ -11,6 +11,7 @@
     padding: 10px;
     width: 130px;
     height: 35px;
+    float: right;
 }
 
 #login-button:focus {
@@ -20,8 +21,7 @@
 }
 
 #login-button:hover {
-   width: 135px;
-   height: 40px;
+   transform: scale(1.1,1.1);
 }
 
 .login-holder {
