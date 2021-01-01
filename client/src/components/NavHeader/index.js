@@ -7,7 +7,7 @@ import { Row, Col } from "react-bootstrap";
 export default function NavHeader(){
 
     return (
-        <Row>
+        <Row className="nav-header">
             <Col xs={8}>
 
             </Col>

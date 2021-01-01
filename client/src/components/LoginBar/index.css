@@ -1,0 +1,30 @@
+#login-button{
+    background-color: #fff;
+    color: #181818;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 500px;
+    outline: 0 !important;
+    border: none !important;
+    font-family: Arial;
+    margin-top: 10px;
+    padding: 10px;
+    width: 130px;
+    height: 35px;
+}
+
+#login-button:focus {
+    background-color: #fff !important;
+    color: #181818 !important;
+    border-radius: 15px !important;
+}
+
+#login-button:hover {
+   width: 135px;
+   height: 40px;
+}
+
+.login-holder {
+    align-items: right;
+    align-content: right;
+}
