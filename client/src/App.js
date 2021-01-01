@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 
 import NavView from "./components/NavView";
+import NavHeader from "./components/NavHeader";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
 import YourLibrary from "./pages/YourLibrary";
@@ -26,7 +27,8 @@ function App() {
             <Row>
                 <NavBar />
                   <NavView>
-                      <Home />
+                    <NavHeader />
+                    <Home />
                   </NavView>
                 <FriendsBar />
             </Row>

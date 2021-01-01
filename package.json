@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/KantKontrol/Spotfiy-Clone#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "querystring": "^0.2.0"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
