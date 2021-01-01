@@ -1,0 +1,29 @@
+{
+  "name": "spotfiy-clone",
+  "version": "1.0.0",
+  "description": "Current Progress:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-both": "concurrently \"npm run client\" \"npx nodemon start\"",
+    "start": "node index.js",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KantKontrol/Spotfiy-Clone.git"
+  },
+  "author": "KantKontrol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KantKontrol/Spotfiy-Clone/issues"
+  },
+  "homepage": "https://github.com/KantKontrol/Spotfiy-Clone#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
