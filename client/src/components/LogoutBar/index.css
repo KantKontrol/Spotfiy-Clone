@@ -1,0 +1,30 @@
+#logout-button{
+    background-color: #fff;
+    color: #181818;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 500px;
+    outline: 0 !important;
+    border: none !important;
+    font-family: Arial;
+    margin-top: 10px;
+    padding: 10px;
+    width: 130px;
+    height: 35px;
+    float: right;
+}
+
+#logout-button:focus {
+    background-color: #fff !important;
+    color: #181818 !important;
+    border-radius: 15px !important;
+}
+
+#logout-button:hover {
+   transform: scale(1.1,1.1);
+}
+
+.logout-holder {
+    align-items: right;
+    align-content: right;
+}

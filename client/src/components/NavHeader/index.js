@@ -1,10 +1,14 @@
 import React from "react";
 import "./index.css";
 import LoginBar from "../LoginBar";
+import LogoutBar from "../LogoutBar";
+import { useAuth0 } from '@auth0/auth0-react';
 
 import { Row, Col } from "react-bootstrap";
 
 export default function NavHeader(){
+
+    const { isAuthenticated } = useAuth0();
 
     return (
         <Row className="nav-header">
@@ -12,7 +16,8 @@ export default function NavHeader(){
 
             </Col>
             <Col xs={4}>
-                <LoginBar />
+                { isAuthenticated ?  <LogoutBar /> : <LoginBar />}
+                
             </Col>
         </Row>
     );
