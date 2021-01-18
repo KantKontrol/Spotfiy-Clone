@@ -50,7 +50,6 @@ function App() {
         <Route path="/home">
           <Container fluid>
             <Row>
-            <button onClick={() => loginWithRedirect()}>Log in</button>;
                 <NavBar />
                   <NavView>
                     <NavHeader />
