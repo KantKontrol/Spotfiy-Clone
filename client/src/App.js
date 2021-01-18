@@ -20,18 +20,37 @@ import FriendsBar from "./components/FriendsBar";
 import PlayBar from "./components/PlayBar";
 
 
-const authSpot = () => {
-  API.loginAPI();
-}
+import { useAuth0 } from '@auth0/auth0-react';
 
 function App() {
+  const {
+    isLoading,
+    isAuthenticated,
+    error,
+    user,
+    loginWithRedirect,
+    logout,
+  } = useAuth0();
+
+  if(error){
+    return <p>OOPS! {error.message}</p>
+  }
+
+  if(isLoading){
+    return <p>Application loading...</p>
+  }
+
+  if(isAuthenticated){
+    console.log(user)
+  }
+
   return (
     <Router>
       <Switch>
         <Route path="/home">
           <Container fluid>
-            <button onClick={() => authSpot()}>test</button>
             <Row>
+            <button onClick={() => loginWithRedirect()}>Log in</button>;
                 <NavBar />
                   <NavView>
                     <NavHeader />

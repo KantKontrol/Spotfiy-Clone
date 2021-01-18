@@ -4,6 +4,9 @@ module.exports = {
         
     },
     loginAPI: function(){
-        return ajax.get("/login");
+        return ajax.get("/login", {
+        params: {
+            mode: "no-cors"
+        }});
     }
 }
