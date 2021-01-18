@@ -67,6 +67,7 @@ function App() {
             <Row>
                 <NavBar />
                   <NavView>
+                      <NavHeader />
                       <Search />
                   </NavView>
                 <FriendsBar />
@@ -81,6 +82,7 @@ function App() {
             <Row>
                 <NavBar />
                   <NavView>
+                      <NavHeader />
                       <YourLibrary />
                   </NavView>
                 <FriendsBar />
@@ -95,6 +97,7 @@ function App() {
               <Row>
                   <NavBar />
                     <NavView>
+                        <NavHeader />
                         <Home />
                     </NavView>
                   <FriendsBar />
